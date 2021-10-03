@@ -2,7 +2,7 @@
 const express = require('express');
 var bodyParser = require('body-parser'); // Parser
 const app = express();
-const port = 3000;
+const port = 3001;
 
 // Arrays
 var people = [];

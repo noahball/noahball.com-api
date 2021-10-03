@@ -1,4 +1,4 @@
-// noahball.com APIconst express = require('express')
+// noahball.com API
 const express = require('express');
 var bodyParser = require('body-parser'); // Parser
 const app = express();

@@ -19,10 +19,14 @@ app.get('/', (req, res) => {
 })
 
 app.post('/v1/contact', (req, res) => {
-    people.push(req.body.name);
-    emails.push(req.body.email);
-    messages.push(req.body.message);
-    res.redirect('https://noahball.com' + '?result=success');
+    if(!req.body.name || !req.body.email || !req.body.message) {
+        res.redirect('https://noahball.com' + '?result=missing');
+    } else {
+        people.push(req.body.name);
+        emails.push(req.body.email);
+        messages.push(req.body.message);
+        res.redirect('https://noahball.com' + '?result=success');
+    }
 })
 
 app.get('/v1/contact/view', (req, res) => {

@@ -1,0 +1,20 @@
+{
+  "name": "noahball.com-api",
+  "version": "1.0.0",
+  "description": "API services for noahball.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noahball/noahball.com-api.git"
+  },
+  "author": "Noah Ball",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/noahball/noahball.com-api/issues"
+  },
+  "homepage": "https://github.com/noahball/noahball.com-api#readme"
+}

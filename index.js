@@ -22,7 +22,7 @@ app.post('/v1/contact', (req, res) => {
     people.push(req.body.name);
     emails.push(req.body.email);
     messages.push(req.body.message);
-    res.redirect('file:///home/noah/Documents/GitHub/noahball.com/index.html' + '?result=success');
+    res.redirect('https://noahball.com' + '?result=success');
 })
 
 app.get('/v1/contact/view', (req, res) => {
